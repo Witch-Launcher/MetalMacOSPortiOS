@@ -1,0 +1,71 @@
+direction,header,line,declaration
+macOS-only,MTLBlitCommandEncoder.h,50,"- (void)synchronizeResource:(id<MTLResource>)resource API_AVAILABLE(macos(10.11), macCatalyst(13.0)) API_UNAVAILABLE(ios);"
+macOS-only,MTLBlitCommandEncoder.h,61,"- (void)synchronizeTexture:(id<MTLTexture>)texture slice:(NSUInteger)slice level:(NSUInteger)level API_AVAILABLE(macos(10.11), macCatalyst(13.0)) API_UNAVAILABLE(ios);"
+macOS-only,MTLBuffer.h,60,"- (void)didModifyRange:(NSRange)range API_AVAILABLE(macos(10.11), macCatalyst(13.0)) API_UNAVAILABLE(ios);"
+macOS-only,MTLBuffer.h,104,"@property (nullable, readonly) id<MTLBuffer> remoteStorageBuffer API_AVAILABLE(macos(10.15)) API_UNAVAILABLE(ios);"
+macOS-only,MTLBuffer.h,111,- (nullable id <MTLBuffer>) newRemoteBufferViewForDevice:(id <MTLDevice>)device API_AVAILABLE(macos(10.15)) API_UNAVAILABLE(ios);
+macOS-only,MTLCommandBuffer.h,119,"MTLCommandBufferErrorDeviceRemoved API_AVAILABLE(macos(10.13)) API_UNAVAILABLE(ios) = 11,"
+macOS-only,MTLCommandEncoder.h,31,"MTLBarrierScopeRenderTargets API_AVAILABLE(macos(10.14), macCatalyst(13.0)) API_UNAVAILABLE(ios) = 1 << 2,"
+macOS-only,MTLDevice.h,142,typedef NSString *MTLDeviceNotificationName NS_STRING_ENUM API_AVAILABLE(macos(10.13)) API_UNAVAILABLE(ios);
+macOS-only,MTLDevice.h,147,MTL_EXTERN MTLDeviceNotificationName const MTLDeviceWasAddedNotification API_AVAILABLE(macos(10.13)) API_UNAVAILABLE(ios);
+macOS-only,MTLDevice.h,155,MTL_EXTERN MTLDeviceNotificationName const MTLDeviceRemovalRequestedNotification API_AVAILABLE(macos(10.13)) API_UNAVAILABLE(ios);
+macOS-only,MTLDevice.h,161,MTL_EXTERN MTLDeviceNotificationName const MTLDeviceWasRemovedNotification API_AVAILABLE(macos(10.13)) API_UNAVAILABLE(ios);
+macOS-only,MTLDevice.h,166,"typedef void (^ NS_SWIFT_SENDABLE MTLDeviceNotificationHandler)(id <MTLDevice> device, MTLDeviceNotificationName notifyName) API_AVAILABLE(macos(10.13)) API_UNAVAILABLE(ios);"
+macOS-only,MTLDevice.h,174,"MTL_EXTERN NSArray <id<MTLDevice>> *MTLCopyAllDevicesWithObserver(id <NSObject> __nullable __strong * __nonnull observer, MTLDeviceNotificationHandler handler) API_AVAILABLE(macos(10.13)) API_UNAVAILABLE(ios) NS_RETURNS_RETAINED;"
+macOS-only,MTLDevice.h,179,MTL_EXTERN void MTLRemoveDeviceObserver(id <NSObject> observer) API_AVAILABLE(macos(10.13)) API_UNAVAILABLE(ios);
+macOS-only,MTLDevice.h,205,"MTLFeatureSet_macOS_GPUFamily1_v1 API_AVAILABLE(macos(10.11)) API_UNAVAILABLE(ios) API_UNAVAILABLE(macCatalyst) = 10000,"
+macOS-only,MTLDevice.h,206,"MTLFeatureSet_OSX_GPUFamily1_v1 API_AVAILABLE(macos(10.11)) API_UNAVAILABLE(ios) = MTLFeatureSet_macOS_GPUFamily1_v1, // deprecated"
+macOS-only,MTLDevice.h,208,"MTLFeatureSet_macOS_GPUFamily1_v2 API_AVAILABLE(macos(10.12)) API_UNAVAILABLE(ios) API_UNAVAILABLE(macCatalyst) = 10001,"
+macOS-only,MTLDevice.h,209,"MTLFeatureSet_OSX_GPUFamily1_v2 API_AVAILABLE(macos(10.12)) API_UNAVAILABLE(ios) = MTLFeatureSet_macOS_GPUFamily1_v2, // deprecated"
+macOS-only,MTLDevice.h,210,"MTLFeatureSet_macOS_ReadWriteTextureTier2 API_AVAILABLE(macos(10.12)) API_UNAVAILABLE(ios) = 10002,"
+macOS-only,MTLDevice.h,211,"MTLFeatureSet_OSX_ReadWriteTextureTier2 API_AVAILABLE(macos(10.12)) API_UNAVAILABLE(ios) = MTLFeatureSet_macOS_ReadWriteTextureTier2, // deprecated"
+macOS-only,MTLDevice.h,213,"MTLFeatureSet_macOS_GPUFamily1_v3 API_AVAILABLE(macos(10.13)) API_UNAVAILABLE(ios) API_UNAVAILABLE(macCatalyst) = 10003,"
+macOS-only,MTLDevice.h,215,"MTLFeatureSet_macOS_GPUFamily1_v4 API_AVAILABLE(macos(10.14)) API_UNAVAILABLE(ios) API_UNAVAILABLE(macCatalyst) = 10004,"
+macOS-only,MTLDevice.h,216,"MTLFeatureSet_macOS_GPUFamily2_v1 API_AVAILABLE(macos(10.14)) API_UNAVAILABLE(ios) API_UNAVAILABLE(macCatalyst) = 10005,"
+macOS-only,MTLDevice.h,268,} API_AVAILABLE(macos(10.15)) API_UNAVAILABLE(ios);
+macOS-only,MTLDevice.h,477,"@property (readonly, getter=isLowPower) BOOL lowPower API_AVAILABLE(macos(10.11), macCatalyst(13.0)) API_UNAVAILABLE(ios);"
+macOS-only,MTLDevice.h,483,"@property (readonly, getter=isHeadless) BOOL headless API_AVAILABLE(macos(10.11), macCatalyst(13.0)) API_UNAVAILABLE(ios);"
+macOS-only,MTLDevice.h,491,"@property (readonly, getter=isRemovable) BOOL removable API_AVAILABLE(macos(10.13), macCatalyst(13.0)) API_UNAVAILABLE(ios);"
+macOS-only,MTLDevice.h,514,@property (readonly) MTLDeviceLocation location API_AVAILABLE(macos(10.15)) API_UNAVAILABLE(ios);
+macOS-only,MTLDevice.h,523,@property (readonly) NSUInteger locationNumber API_AVAILABLE(macos(10.15)) API_UNAVAILABLE(ios);
+macOS-only,MTLDevice.h,531,@property (readonly) uint64_t maxTransferRate API_AVAILABLE(macos(10.15)) API_UNAVAILABLE(ios);
+macOS-only,MTLDevice.h,537,"@property (readonly, getter=isDepth24Stencil8PixelFormatSupported) BOOL depth24Stencil8PixelFormatSupported API_AVAILABLE(macos(10.11), macCatalyst(13.0)) API_UNAVAILABLE(ios);"
+macOS-only,MTLDevice.h,1006,@property (readonly) uint64_t peerGroupID API_AVAILABLE(macos(10.15)) API_UNAVAILABLE(ios);
+macOS-only,MTLDevice.h,1013,@property (readonly) uint32_t peerIndex API_AVAILABLE(macos(10.15)) API_UNAVAILABLE(ios);
+macOS-only,MTLDevice.h,1019,@property (readonly) uint32_t peerCount API_AVAILABLE(macos(10.15)) API_UNAVAILABLE(ios);
+macOS-only,MTLDevice.h,1296,@property (atomic) BOOL shouldMaximizeConcurrentCompilation API_AVAILABLE(macos(13.3)) API_UNAVAILABLE(ios);
+macOS-only,MTLHeap.h,35,"MTLHeapTypeSparse API_AVAILABLE(macos(11.0), macCatalyst(14.0), tvos(16.0)) = 2 ,"
+macOS-only,MTLPixelFormat.h,219,"MTLPixelFormatDepth24Unorm_Stencil8  API_AVAILABLE(macos(10.11), macCatalyst(13.0)) API_UNAVAILABLE(ios) = 255,"
+macOS-only,MTLPixelFormat.h,223,"MTLPixelFormatX24_Stencil8  API_AVAILABLE(macos(10.12), macCatalyst(13.0)) API_UNAVAILABLE(ios) = 262,"
+macOS-only,MTLRenderCommandEncoder.h,795,"- (void)textureBarrier API_DEPRECATED_WITH_REPLACEMENT(""memoryBarrierWithScope:MTLBarrierScopeRenderTargets"", macos(10.11, 10.14)) API_UNAVAILABLE(ios);"
+macOS-only,MTLResource.h,85,"MTLStorageModeManaged API_AVAILABLE(macos(10.11), macCatalyst(13.0)) API_UNAVAILABLE(ios) = 1,"
+macOS-only,MTLResource.h,177,"MTLResourceStorageModeManaged API_AVAILABLE(macos(10.11), macCatalyst(13.0)) API_UNAVAILABLE(ios) = MTLStorageModeManaged << MTLResourceStorageModeShift,"
+macOS-only,MTLTexture.h,533,"@property (nullable, readonly) id<MTLTexture> remoteStorageTexture API_AVAILABLE(macos(10.15)) API_UNAVAILABLE(ios);"
+macOS-only,MTLTexture.h,540,- (nullable id <MTLTexture>) newRemoteTextureViewForDevice:(id <MTLDevice>)device API_AVAILABLE(macos(10.15)) API_UNAVAILABLE(ios);
+reverse,MTLCaptureManager.h,78,"- (instancetype)init API_UNAVAILABLE(macos, ios);"
+reverse,MTLDevice.h,141,"MTLFeatureSet_iOS_GPUFamily1_v1 API_AVAILABLE(ios(8.0)) API_UNAVAILABLE(macos, macCatalyst, tvos) = 0,"
+reverse,MTLDevice.h,142,"MTLFeatureSet_iOS_GPUFamily2_v1 API_AVAILABLE(ios(8.0)) API_UNAVAILABLE(macos, macCatalyst, tvos) = 1,"
+reverse,MTLDevice.h,144,"MTLFeatureSet_iOS_GPUFamily1_v2 API_AVAILABLE(ios(9.0)) API_UNAVAILABLE(macos, macCatalyst, tvos) = 2,"
+reverse,MTLDevice.h,145,"MTLFeatureSet_iOS_GPUFamily2_v2 API_AVAILABLE(ios(9.0)) API_UNAVAILABLE(macos, macCatalyst, tvos) = 3,"
+reverse,MTLDevice.h,146,"MTLFeatureSet_iOS_GPUFamily3_v1 API_AVAILABLE(ios(9.0)) API_UNAVAILABLE(macos, macCatalyst, tvos) = 4,"
+reverse,MTLDevice.h,148,"MTLFeatureSet_iOS_GPUFamily1_v3 API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macos, macCatalyst, tvos) = 5,"
+reverse,MTLDevice.h,149,"MTLFeatureSet_iOS_GPUFamily2_v3 API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macos, macCatalyst, tvos) = 6,"
+reverse,MTLDevice.h,150,"MTLFeatureSet_iOS_GPUFamily3_v2 API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macos, macCatalyst, tvos) = 7,"
+reverse,MTLDevice.h,152,"MTLFeatureSet_iOS_GPUFamily1_v4 API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, macCatalyst, tvos) = 8,"
+reverse,MTLDevice.h,153,"MTLFeatureSet_iOS_GPUFamily2_v4 API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, macCatalyst, tvos) = 9,"
+reverse,MTLDevice.h,154,"MTLFeatureSet_iOS_GPUFamily3_v3 API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, macCatalyst, tvos) = 10,"
+reverse,MTLDevice.h,155,"MTLFeatureSet_iOS_GPUFamily4_v1 API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, macCatalyst, tvos) = 11,"
+reverse,MTLDevice.h,157,"MTLFeatureSet_iOS_GPUFamily1_v5 API_AVAILABLE(ios(12.0)) API_UNAVAILABLE(macos, macCatalyst, tvos) = 12,"
+reverse,MTLDevice.h,158,"MTLFeatureSet_iOS_GPUFamily2_v5 API_AVAILABLE(ios(12.0)) API_UNAVAILABLE(macos, macCatalyst, tvos) = 13,"
+reverse,MTLDevice.h,159,"MTLFeatureSet_iOS_GPUFamily3_v4 API_AVAILABLE(ios(12.0)) API_UNAVAILABLE(macos, macCatalyst, tvos) = 14,"
+reverse,MTLDevice.h,160,"MTLFeatureSet_iOS_GPUFamily4_v2 API_AVAILABLE(ios(12.0)) API_UNAVAILABLE(macos, macCatalyst, tvos) = 15,"
+reverse,MTLDevice.h,161,"MTLFeatureSet_iOS_GPUFamily5_v1 API_AVAILABLE(ios(12.0)) API_UNAVAILABLE(macos, macCatalyst, tvos) = 16,"
+reverse,MTLDevice.h,177,"MTLFeatureSet_tvOS_GPUFamily1_v1 API_AVAILABLE(tvos(9.0)) API_UNAVAILABLE(macos, ios) = 30000,"
+reverse,MTLDevice.h,178,"MTLFeatureSet_TVOS_GPUFamily1_v1 API_AVAILABLE(tvos(9.0)) API_UNAVAILABLE(macos, ios) = MTLFeatureSet_tvOS_GPUFamily1_v1, // deprecated"
+reverse,MTLDevice.h,180,"MTLFeatureSet_tvOS_GPUFamily1_v2 API_AVAILABLE(tvos(10.0)) API_UNAVAILABLE(macos, ios) = 30001,"
+reverse,MTLDevice.h,182,"MTLFeatureSet_tvOS_GPUFamily1_v3 API_AVAILABLE(tvos(11.0)) API_UNAVAILABLE(macos, ios) = 30002,"
+reverse,MTLDevice.h,183,"MTLFeatureSet_tvOS_GPUFamily2_v1 API_AVAILABLE(tvos(11.0)) API_UNAVAILABLE(macos, ios) = 30003,"
+reverse,MTLDevice.h,185,"MTLFeatureSet_tvOS_GPUFamily1_v4 API_AVAILABLE(tvos(12.0)) API_UNAVAILABLE(macos, ios) = 30004,"
+reverse,MTLDevice.h,186,"MTLFeatureSet_tvOS_GPUFamily2_v2 API_AVAILABLE(tvos(12.0)) API_UNAVAILABLE(macos, ios) = 30005,"
+reverse,MTLLibrary.h,208,"MTLLanguageVersion1_0 API_DEPRECATED(""Use a newer language standard"", ios(9.0, 16.0)) API_UNAVAILABLE(macos, macCatalyst) = (1 << 16),"
+reverse,MTLRasterizationRate.h,52,"- (instancetype)init API_UNAVAILABLE(macos, ios);"

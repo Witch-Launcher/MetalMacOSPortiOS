@@ -1,0 +1,896 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06712B4C832251E10ADA154B /* BridgeCapabilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534349AECD245E751951D84A /* BridgeCapabilities.swift */; };
+		08483DE50BFDB2CA7F60A232 /* MetalBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03380C565605DD756761A514 /* MetalBridge.swift */; };
+		097DA8D9E409C30E67565F5A /* SparseFallbackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15998FA942B53D049B887E2C /* SparseFallbackTests.swift */; };
+		18C35D4CFA2C09B89985E923 /* MSAAPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF3DC36DD2F0E654A1CFDFB /* MSAAPolicy.swift */; };
+		19E06C24E3F0E048F50BE733 /* Probe.metal in Sources */ = {isa = PBXBuildFile; fileRef = D1A38F82E900CF46F8D4BAE3 /* Probe.metal */; };
+		2A22C109F2AE281AF7C074B7 /* MetalBridgeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACEF5AEF1EB72BCCB6C088BD /* MetalBridgeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2DFA201B58B802BDD88B06EE /* SparseFallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED1B04FC2905E9306EBA8C6 /* SparseFallback.swift */; };
+		3E3F8797AB85E5382C71FCB3 /* FenceBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A595FAB247C27F9E5D825F /* FenceBridge.swift */; };
+		4338249B9673E1384588C640 /* PlatformLimitationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF497028534586823A0BACB5 /* PlatformLimitationAdapter.swift */; };
+		5AB168570D70466C4CF89048 /* MacLimitProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBD37D8EADC3BDD3965AA55 /* MacLimitProfile.swift */; };
+		5ABD827F5CBB47CCCAF5DFF6 /* MetalBridgeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACEF5AEF1EB72BCCB6C088BD /* MetalBridgeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5BAA9378E194874479561307 /* DeviceAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615E39CEAB4B0ED24E7B1054 /* DeviceAdapter.swift */; };
+		5DB18DDA117D316323925ACA /* TessellationEmulatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38208B528228508A24EEDA45 /* TessellationEmulatorTests.swift */; };
+		5F9745B5E1CD364BCF21CAE1 /* BridgeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6247393816C4A5FEC17FD7 /* BridgeError.swift */; };
+		62126E4A92A66BE95C842938 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 078EA06AB3E5393DA36B7818 /* QuartzCore.framework */; };
+		6D36260EBBACFFE67E008E19 /* ArgumentReplayEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DA891CDE325DC3E66C72A6 /* ArgumentReplayEncoder.swift */; };
+		740D34580EDD20F823FDB0F2 /* BridgeStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD96732AC893943BFCA3134 /* BridgeStatus.swift */; };
+		812B27A4115EEF0F2141E90E /* MBMetalShims.mm in Sources */ = {isa = PBXBuildFile; fileRef = FD33EC931AD399ECEBEE22F6 /* MBMetalShims.mm */; };
+		868E4501368D76E632088C93 /* MBProbe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935A4C087A82161465098040 /* MBProbe.swift */; };
+		86C5019DDF4ACADE67F6D320 /* BCDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8E30F4BEC5E2875D30A362 /* BCDecoder.swift */; };
+		8C261F44FD47474B2CE2F49F /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6762C231EB971824C0AC8F3 /* Metal.framework */; };
+		8D3CF57EDB3727FAAF3DD8E5 /* MetalBridgeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEF5AEF1EB72BCCB6C088BD /* MetalBridgeKit.framework */; };
+		96EA21E364B75DB22A3A49AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3E8A68C57E82EB6400EFB8 /* AppDelegate.swift */; };
+		984E09CEDB23FBBC971B4276 /* BarrierAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369236F247D29864294A7C2D /* BarrierAdapter.swift */; };
+		9F2DD52B37F2F5EB1C69C333 /* ServiceProbes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5450DA88B226858A18F3CF08 /* ServiceProbes.swift */; };
+		A0239851625F73B0A89692D8 /* bcdec_impl.c in Sources */ = {isa = PBXBuildFile; fileRef = 22999B97798319590184791C /* bcdec_impl.c */; };
+		A15ED75237B9C1B831222C20 /* MetalSmokeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E2FFE381EFB522E6D5337 /* MetalSmokeTests.swift */; };
+		A462D28C075DB65532D409CF /* MacFacadeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF8963C502191B15FD844ED /* MacFacadeTests.swift */; };
+		A7344C26884E05368D918E0B /* PixelFormatAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D2582706FFE45E6B4579AD /* PixelFormatAdapter.swift */; };
+		B440181DA8273A5B6670DB46 /* MacMetalDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045FE87B39302D33D97DA979 /* MacMetalDevice.swift */; };
+		B723F8A85DDB03A7AB3ECB2D /* CompatibilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855833C6A6FB722C8F819917 /* CompatibilityViewController.swift */; };
+		BAF9112B14B36C69A0EED99A /* StorageModeAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9E692ABE07CC58D4E03C2E /* StorageModeAdapter.swift */; };
+		BE3041794EB779AC76EC70F1 /* SynchronizationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8562ED3378D8C1E23A88D3 /* SynchronizationAdapter.swift */; };
+		BE741FBFB36D7F38F57C7230 /* TessellationEmulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B812FB506D6D6D8E6BCF96B7 /* TessellationEmulator.swift */; };
+		C61543073A62B9931E4FCC22 /* ArgumentReplayEncoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7460F122E145C7B6F636396 /* ArgumentReplayEncoderTests.swift */; };
+		C6A9F34CAB910C85ED197C05 /* FenceBridgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F352297E052C84920CEF5A05 /* FenceBridgeTests.swift */; };
+		C97A276B6121EC9A2BB0D7AF /* BCDecodeDifferentialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED731E936C6FFE6360468E3 /* BCDecodeDifferentialTests.swift */; };
+		CD6C14924BD4AE48A93540DE /* RenderProbe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D1C19AC80354A8314B512C /* RenderProbe.swift */; };
+		D05627851EAFDF7BB08E2166 /* BridgeLogicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58320639B00C45F0CAFE8D8 /* BridgeLogicTests.swift */; };
+		D1C842CCB341F53E330048F5 /* MBMetalShims.h in Headers */ = {isa = PBXBuildFile; fileRef = 377DAF0DA5F36E2C5AC6E572 /* MBMetalShims.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D22A3C121C0CECA8E9134ED0 /* RemoteResourceAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EDB01EBFA6DAFC7337D250 /* RemoteResourceAdapter.swift */; };
+		DC0725DF981DA83B8DE28D7A /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6762C231EB971824C0AC8F3 /* Metal.framework */; };
+		DDC152CDB274FDDFD924AEC9 /* CompatibilityManifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E18BBF04517CAFFD2161B8 /* CompatibilityManifest.swift */; };
+		EA55470DEF90E02559A40118 /* Tessellation.metal in Sources */ = {isa = PBXBuildFile; fileRef = 29E8BE658960C2D417DE788B /* Tessellation.metal */; };
+		EC1B874F8EA94559A59EE205 /* BCDecode.metal in Sources */ = {isa = PBXBuildFile; fileRef = 9B21D3D6BA10C9DEE5766BCF /* BCDecode.metal */; };
+		EF5DA538C53E411BC7B1EC9F /* BridgeResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FCBED0B90154928E020A27 /* BridgeResult.swift */; };
+		F048FE7FF2521D5BC63EF63A /* MacFeatureSetMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = C722F2F7FB28FA97D1B3C2DD /* MacFeatureSetMapping.swift */; };
+		F44BA89DB6BD8179104D1004 /* MetalBridgeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEF5AEF1EB72BCCB6C088BD /* MetalBridgeKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0E250E8CB728E74CD0A872EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38FD9A42E99B6D4C9A5A825B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 558FB2731CAA2DAF198760AD;
+			remoteInfo = MetalBridgeKit;
+		};
+		4A6D9B7D9C73690631F44623 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38FD9A42E99B6D4C9A5A825B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 558FB2731CAA2DAF198760AD;
+			remoteInfo = MetalBridgeKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		75E43C3B18D087D71BCBE7E1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5ABD827F5CBB47CCCAF5DFF6 /* MetalBridgeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFB2183D41E748B330243ABE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2A22C109F2AE281AF7C074B7 /* MetalBridgeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		03380C565605DD756761A514 /* MetalBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalBridge.swift; sourceTree = "<group>"; };
+		045FE87B39302D33D97DA979 /* MacMetalDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacMetalDevice.swift; sourceTree = "<group>"; };
+		05D2582706FFE45E6B4579AD /* PixelFormatAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelFormatAdapter.swift; sourceTree = "<group>"; };
+		078EA06AB3E5393DA36B7818 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		088B3779BA737071F4DE3A01 /* MetalBridgeLab.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = MetalBridgeLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13E3A582E0C77B03C314C40F /* MetalBridgeKitTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = MetalBridgeKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		15998FA942B53D049B887E2C /* SparseFallbackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparseFallbackTests.swift; sourceTree = "<group>"; };
+		22999B97798319590184791C /* bcdec_impl.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bcdec_impl.c; sourceTree = "<group>"; };
+		29E8BE658960C2D417DE788B /* Tessellation.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Tessellation.metal; sourceTree = "<group>"; };
+		369236F247D29864294A7C2D /* BarrierAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarrierAdapter.swift; sourceTree = "<group>"; };
+		377DAF0DA5F36E2C5AC6E572 /* MBMetalShims.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBMetalShims.h; sourceTree = "<group>"; };
+		38208B528228508A24EEDA45 /* TessellationEmulatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TessellationEmulatorTests.swift; sourceTree = "<group>"; };
+		45D1C19AC80354A8314B512C /* RenderProbe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderProbe.swift; sourceTree = "<group>"; };
+		47E18BBF04517CAFFD2161B8 /* CompatibilityManifest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompatibilityManifest.swift; sourceTree = "<group>"; };
+		4D3E8A68C57E82EB6400EFB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		534349AECD245E751951D84A /* BridgeCapabilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeCapabilities.swift; sourceTree = "<group>"; };
+		5450DA88B226858A18F3CF08 /* ServiceProbes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProbes.swift; sourceTree = "<group>"; };
+		5BD96732AC893943BFCA3134 /* BridgeStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeStatus.swift; sourceTree = "<group>"; };
+		615E39CEAB4B0ED24E7B1054 /* DeviceAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceAdapter.swift; sourceTree = "<group>"; };
+		61DA891CDE325DC3E66C72A6 /* ArgumentReplayEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentReplayEncoder.swift; sourceTree = "<group>"; };
+		74EDB01EBFA6DAFC7337D250 /* RemoteResourceAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteResourceAdapter.swift; sourceTree = "<group>"; };
+		7A6247393816C4A5FEC17FD7 /* BridgeError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeError.swift; sourceTree = "<group>"; };
+		7AF8963C502191B15FD844ED /* MacFacadeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacFacadeTests.swift; sourceTree = "<group>"; };
+		84FCBED0B90154928E020A27 /* BridgeResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeResult.swift; sourceTree = "<group>"; };
+		855833C6A6FB722C8F819917 /* CompatibilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompatibilityViewController.swift; sourceTree = "<group>"; };
+		892E2FFE381EFB522E6D5337 /* MetalSmokeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalSmokeTests.swift; sourceTree = "<group>"; };
+		935A4C087A82161465098040 /* MBProbe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBProbe.swift; sourceTree = "<group>"; };
+		9B21D3D6BA10C9DEE5766BCF /* BCDecode.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = BCDecode.metal; sourceTree = "<group>"; };
+		A7460F122E145C7B6F636396 /* ArgumentReplayEncoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentReplayEncoderTests.swift; sourceTree = "<group>"; };
+		AB9E692ABE07CC58D4E03C2E /* StorageModeAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageModeAdapter.swift; sourceTree = "<group>"; };
+		ACEF5AEF1EB72BCCB6C088BD /* MetalBridgeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MetalBridgeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF497028534586823A0BACB5 /* PlatformLimitationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformLimitationAdapter.swift; sourceTree = "<group>"; };
+		B6762C231EB971824C0AC8F3 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		B812FB506D6D6D8E6BCF96B7 /* TessellationEmulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TessellationEmulator.swift; sourceTree = "<group>"; };
+		BAF3DC36DD2F0E654A1CFDFB /* MSAAPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSAAPolicy.swift; sourceTree = "<group>"; };
+		BED1B04FC2905E9306EBA8C6 /* SparseFallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparseFallback.swift; sourceTree = "<group>"; };
+		BED731E936C6FFE6360468E3 /* BCDecodeDifferentialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCDecodeDifferentialTests.swift; sourceTree = "<group>"; };
+		C58320639B00C45F0CAFE8D8 /* BridgeLogicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeLogicTests.swift; sourceTree = "<group>"; };
+		C722F2F7FB28FA97D1B3C2DD /* MacFeatureSetMapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacFeatureSetMapping.swift; sourceTree = "<group>"; };
+		CB8562ED3378D8C1E23A88D3 /* SynchronizationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronizationAdapter.swift; sourceTree = "<group>"; };
+		D1A38F82E900CF46F8D4BAE3 /* Probe.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Probe.metal; sourceTree = "<group>"; };
+		DCBD37D8EADC3BDD3965AA55 /* MacLimitProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacLimitProfile.swift; sourceTree = "<group>"; };
+		E9AE3E3C9C03054BAF667CC5 /* BCDecodeBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCDecodeBridge.h; sourceTree = "<group>"; };
+		EA8E30F4BEC5E2875D30A362 /* BCDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCDecoder.swift; sourceTree = "<group>"; };
+		F352297E052C84920CEF5A05 /* FenceBridgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FenceBridgeTests.swift; sourceTree = "<group>"; };
+		F9A595FAB247C27F9E5D825F /* FenceBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FenceBridge.swift; sourceTree = "<group>"; };
+		FD33EC931AD399ECEBEE22F6 /* MBMetalShims.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MBMetalShims.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B846979D306914499653992 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F44BA89DB6BD8179104D1004 /* MetalBridgeKit.framework in Frameworks */,
+				8C261F44FD47474B2CE2F49F /* Metal.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BAD0D0CC72611B216A964FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC0725DF981DA83B8DE28D7A /* Metal.framework in Frameworks */,
+				62126E4A92A66BE95C842938 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FA7721DE85C9A207AF5280D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D3CF57EDB3727FAAF3DD8E5 /* MetalBridgeKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		041FEB9A6A16E4C272957E28 /* Sparse */ = {
+			isa = PBXGroup;
+			children = (
+				BED1B04FC2905E9306EBA8C6 /* SparseFallback.swift */,
+			);
+			path = Sparse;
+			sourceTree = "<group>";
+		};
+		061E74F0F8DAED39EAC4670C /* Tessellation */ = {
+			isa = PBXGroup;
+			children = (
+				B812FB506D6D6D8E6BCF96B7 /* TessellationEmulator.swift */,
+			);
+			path = Tessellation;
+			sourceTree = "<group>";
+		};
+		0FEC371013B05075C129247F /* Emulation */ = {
+			isa = PBXGroup;
+			children = (
+				935A4C087A82161465098040 /* MBProbe.swift */,
+				BAF3DC36DD2F0E654A1CFDFB /* MSAAPolicy.swift */,
+				5450DA88B226858A18F3CF08 /* ServiceProbes.swift */,
+				5E6D2FFE258EB350048398B9 /* ArgumentBuffers */,
+				C4A2B0C4D8113C74498AD2D4 /* BCDecode */,
+				FE0A92221CD047E487852DFE /* Fences */,
+				041FEB9A6A16E4C272957E28 /* Sparse */,
+				061E74F0F8DAED39EAC4670C /* Tessellation */,
+			);
+			path = Emulation;
+			sourceTree = "<group>";
+		};
+		27901356C7F746AA48B129F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6762C231EB971824C0AC8F3 /* Metal.framework */,
+				078EA06AB3E5393DA36B7818 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2929737B29038A067C4B1393 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				9B21D3D6BA10C9DEE5766BCF /* BCDecode.metal */,
+				29E8BE658960C2D417DE788B /* Tessellation.metal */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		2B1D3B199C4D9122EDCF5BB5 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				487F7E666DEB0881EBB2F56C /* MetalBridgeKitTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		391B2B1A4701F84600F35E97 /* Inventory */ = {
+			isa = PBXGroup;
+			children = (
+				47E18BBF04517CAFFD2161B8 /* CompatibilityManifest.swift */,
+			);
+			path = Inventory;
+			sourceTree = "<group>";
+		};
+		487F7E666DEB0881EBB2F56C /* MetalBridgeKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				A7460F122E145C7B6F636396 /* ArgumentReplayEncoderTests.swift */,
+				E9AE3E3C9C03054BAF667CC5 /* BCDecodeBridge.h */,
+				BED731E936C6FFE6360468E3 /* BCDecodeDifferentialTests.swift */,
+				C58320639B00C45F0CAFE8D8 /* BridgeLogicTests.swift */,
+				F352297E052C84920CEF5A05 /* FenceBridgeTests.swift */,
+				7AF8963C502191B15FD844ED /* MacFacadeTests.swift */,
+				892E2FFE381EFB522E6D5337 /* MetalSmokeTests.swift */,
+				15998FA942B53D049B887E2C /* SparseFallbackTests.swift */,
+				38208B528228508A24EEDA45 /* TessellationEmulatorTests.swift */,
+			);
+			path = MetalBridgeKitTests;
+			sourceTree = "<group>";
+		};
+		4BA67A8EB1EED44A1E33355E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5F0B5F604A5D51BC41BA1F05 /* MetalBridgeKit */,
+				B502A7525209BB7DC0588AE4 /* MetalBridgeLab */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		543EC97D12D0FA721F26C7C5 /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				C722F2F7FB28FA97D1B3C2DD /* MacFeatureSetMapping.swift */,
+				DCBD37D8EADC3BDD3965AA55 /* MacLimitProfile.swift */,
+				045FE87B39302D33D97DA979 /* MacMetalDevice.swift */,
+			);
+			path = Mac;
+			sourceTree = "<group>";
+		};
+		5E6D2FFE258EB350048398B9 /* ArgumentBuffers */ = {
+			isa = PBXGroup;
+			children = (
+				61DA891CDE325DC3E66C72A6 /* ArgumentReplayEncoder.swift */,
+			);
+			path = ArgumentBuffers;
+			sourceTree = "<group>";
+		};
+		5F0B5F604A5D51BC41BA1F05 /* MetalBridgeKit */ = {
+			isa = PBXGroup;
+			children = (
+				89240567EE9DFB14B8C3F9A3 /* Adapters */,
+				890A4379D2E149D59AE23857 /* Core */,
+				0FEC371013B05075C129247F /* Emulation */,
+				391B2B1A4701F84600F35E97 /* Inventory */,
+				543EC97D12D0FA721F26C7C5 /* Mac */,
+				2929737B29038A067C4B1393 /* Shaders */,
+				9B2F897D8BEAB3369E81C86E /* Shims */,
+			);
+			path = MetalBridgeKit;
+			sourceTree = "<group>";
+		};
+		890A4379D2E149D59AE23857 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				534349AECD245E751951D84A /* BridgeCapabilities.swift */,
+				7A6247393816C4A5FEC17FD7 /* BridgeError.swift */,
+				84FCBED0B90154928E020A27 /* BridgeResult.swift */,
+				5BD96732AC893943BFCA3134 /* BridgeStatus.swift */,
+				03380C565605DD756761A514 /* MetalBridge.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		89240567EE9DFB14B8C3F9A3 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				369236F247D29864294A7C2D /* BarrierAdapter.swift */,
+				615E39CEAB4B0ED24E7B1054 /* DeviceAdapter.swift */,
+				05D2582706FFE45E6B4579AD /* PixelFormatAdapter.swift */,
+				AF497028534586823A0BACB5 /* PlatformLimitationAdapter.swift */,
+				74EDB01EBFA6DAFC7337D250 /* RemoteResourceAdapter.swift */,
+				AB9E692ABE07CC58D4E03C2E /* StorageModeAdapter.swift */,
+				CB8562ED3378D8C1E23A88D3 /* SynchronizationAdapter.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		98E7452C573D0A4766DA2CD4 = {
+			isa = PBXGroup;
+			children = (
+				9CC7C4A85BFA17ECD21D82CA /* Shaders */,
+				4BA67A8EB1EED44A1E33355E /* Sources */,
+				2B1D3B199C4D9122EDCF5BB5 /* Tests */,
+				A942F9CBA0F91DB161BC8EDF /* third_party */,
+				27901356C7F746AA48B129F6 /* Frameworks */,
+				C13EDC40F5118C87B970A0AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9B2F897D8BEAB3369E81C86E /* Shims */ = {
+			isa = PBXGroup;
+			children = (
+				377DAF0DA5F36E2C5AC6E572 /* MBMetalShims.h */,
+				FD33EC931AD399ECEBEE22F6 /* MBMetalShims.mm */,
+			);
+			path = Shims;
+			sourceTree = "<group>";
+		};
+		9CC7C4A85BFA17ECD21D82CA /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				D1A38F82E900CF46F8D4BAE3 /* Probe.metal */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		A942F9CBA0F91DB161BC8EDF /* third_party */ = {
+			isa = PBXGroup;
+			children = (
+				DF6E4EDC856C2CE9DB38FDEF /* bcdec */,
+			);
+			path = third_party;
+			sourceTree = "<group>";
+		};
+		B502A7525209BB7DC0588AE4 /* MetalBridgeLab */ = {
+			isa = PBXGroup;
+			children = (
+				4D3E8A68C57E82EB6400EFB8 /* AppDelegate.swift */,
+				855833C6A6FB722C8F819917 /* CompatibilityViewController.swift */,
+				45D1C19AC80354A8314B512C /* RenderProbe.swift */,
+			);
+			path = MetalBridgeLab;
+			sourceTree = "<group>";
+		};
+		C13EDC40F5118C87B970A0AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACEF5AEF1EB72BCCB6C088BD /* MetalBridgeKit.framework */,
+				13E3A582E0C77B03C314C40F /* MetalBridgeKitTests.xctest */,
+				088B3779BA737071F4DE3A01 /* MetalBridgeLab.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4A2B0C4D8113C74498AD2D4 /* BCDecode */ = {
+			isa = PBXGroup;
+			children = (
+				EA8E30F4BEC5E2875D30A362 /* BCDecoder.swift */,
+			);
+			path = BCDecode;
+			sourceTree = "<group>";
+		};
+		DF6E4EDC856C2CE9DB38FDEF /* bcdec */ = {
+			isa = PBXGroup;
+			children = (
+				22999B97798319590184791C /* bcdec_impl.c */,
+			);
+			path = bcdec;
+			sourceTree = "<group>";
+		};
+		FE0A92221CD047E487852DFE /* Fences */ = {
+			isa = PBXGroup;
+			children = (
+				F9A595FAB247C27F9E5D825F /* FenceBridge.swift */,
+			);
+			path = Fences;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		67932AA59E5BBA91FDEFAA19 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1C842CCB341F53E330048F5 /* MBMetalShims.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1C591BD03EBFFACA629E7744 /* MetalBridgeKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6278613AACD1EB49D403B3B /* Build configuration list for PBXNativeTarget "MetalBridgeKitTests" */;
+			buildPhases = (
+				2A43D7F1E51B785C10EAA0B4 /* Sources */,
+				5FA7721DE85C9A207AF5280D /* Frameworks */,
+				75E43C3B18D087D71BCBE7E1 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F43315462AA343CC9C00A093 /* PBXTargetDependency */,
+			);
+			name = MetalBridgeKitTests;
+			packageProductDependencies = (
+			);
+			productName = MetalBridgeKitTests;
+			productReference = 13E3A582E0C77B03C314C40F /* MetalBridgeKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		558FB2731CAA2DAF198760AD /* MetalBridgeKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD11DD1F1C54676C67074291 /* Build configuration list for PBXNativeTarget "MetalBridgeKit" */;
+			buildPhases = (
+				67932AA59E5BBA91FDEFAA19 /* Headers */,
+				DD325C2B6EB401E7B9613B64 /* Sources */,
+				2BAD0D0CC72611B216A964FD /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MetalBridgeKit;
+			packageProductDependencies = (
+			);
+			productName = MetalBridgeKit;
+			productReference = ACEF5AEF1EB72BCCB6C088BD /* MetalBridgeKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BD1AEDCAD0D2FA423FEEBDE2 /* MetalBridgeLab */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7299B5FF6A1C1C5A5A458745 /* Build configuration list for PBXNativeTarget "MetalBridgeLab" */;
+			buildPhases = (
+				9C6D3FE807514E3F5A358548 /* Sources */,
+				1B846979D306914499653992 /* Frameworks */,
+				CFB2183D41E748B330243ABE /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DD6942B0F4CE187AB2EE8EA /* PBXTargetDependency */,
+			);
+			name = MetalBridgeLab;
+			packageProductDependencies = (
+			);
+			productName = MetalBridgeLab;
+			productReference = 088B3779BA737071F4DE3A01 /* MetalBridgeLab.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		38FD9A42E99B6D4C9A5A825B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					BD1AEDCAD0D2FA423FEEBDE2 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C59989A65851F7898ED907A0 /* Build configuration list for PBXProject "MetalBridge" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 98E7452C573D0A4766DA2CD4;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C13EDC40F5118C87B970A0AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				558FB2731CAA2DAF198760AD /* MetalBridgeKit */,
+				BD1AEDCAD0D2FA423FEEBDE2 /* MetalBridgeLab */,
+				1C591BD03EBFFACA629E7744 /* MetalBridgeKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A43D7F1E51B785C10EAA0B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C61543073A62B9931E4FCC22 /* ArgumentReplayEncoderTests.swift in Sources */,
+				C97A276B6121EC9A2BB0D7AF /* BCDecodeDifferentialTests.swift in Sources */,
+				D05627851EAFDF7BB08E2166 /* BridgeLogicTests.swift in Sources */,
+				C6A9F34CAB910C85ED197C05 /* FenceBridgeTests.swift in Sources */,
+				A462D28C075DB65532D409CF /* MacFacadeTests.swift in Sources */,
+				A15ED75237B9C1B831222C20 /* MetalSmokeTests.swift in Sources */,
+				097DA8D9E409C30E67565F5A /* SparseFallbackTests.swift in Sources */,
+				5DB18DDA117D316323925ACA /* TessellationEmulatorTests.swift in Sources */,
+				A0239851625F73B0A89692D8 /* bcdec_impl.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C6D3FE807514E3F5A358548 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96EA21E364B75DB22A3A49AC /* AppDelegate.swift in Sources */,
+				B723F8A85DDB03A7AB3ECB2D /* CompatibilityViewController.swift in Sources */,
+				19E06C24E3F0E048F50BE733 /* Probe.metal in Sources */,
+				CD6C14924BD4AE48A93540DE /* RenderProbe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD325C2B6EB401E7B9613B64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D36260EBBACFFE67E008E19 /* ArgumentReplayEncoder.swift in Sources */,
+				EC1B874F8EA94559A59EE205 /* BCDecode.metal in Sources */,
+				86C5019DDF4ACADE67F6D320 /* BCDecoder.swift in Sources */,
+				984E09CEDB23FBBC971B4276 /* BarrierAdapter.swift in Sources */,
+				06712B4C832251E10ADA154B /* BridgeCapabilities.swift in Sources */,
+				5F9745B5E1CD364BCF21CAE1 /* BridgeError.swift in Sources */,
+				EF5DA538C53E411BC7B1EC9F /* BridgeResult.swift in Sources */,
+				740D34580EDD20F823FDB0F2 /* BridgeStatus.swift in Sources */,
+				DDC152CDB274FDDFD924AEC9 /* CompatibilityManifest.swift in Sources */,
+				5BAA9378E194874479561307 /* DeviceAdapter.swift in Sources */,
+				3E3F8797AB85E5382C71FCB3 /* FenceBridge.swift in Sources */,
+				812B27A4115EEF0F2141E90E /* MBMetalShims.mm in Sources */,
+				868E4501368D76E632088C93 /* MBProbe.swift in Sources */,
+				18C35D4CFA2C09B89985E923 /* MSAAPolicy.swift in Sources */,
+				F048FE7FF2521D5BC63EF63A /* MacFeatureSetMapping.swift in Sources */,
+				5AB168570D70466C4CF89048 /* MacLimitProfile.swift in Sources */,
+				B440181DA8273A5B6670DB46 /* MacMetalDevice.swift in Sources */,
+				08483DE50BFDB2CA7F60A232 /* MetalBridge.swift in Sources */,
+				A7344C26884E05368D918E0B /* PixelFormatAdapter.swift in Sources */,
+				4338249B9673E1384588C640 /* PlatformLimitationAdapter.swift in Sources */,
+				D22A3C121C0CECA8E9134ED0 /* RemoteResourceAdapter.swift in Sources */,
+				9F2DD52B37F2F5EB1C69C333 /* ServiceProbes.swift in Sources */,
+				2DFA201B58B802BDD88B06EE /* SparseFallback.swift in Sources */,
+				BAF9112B14B36C69A0EED99A /* StorageModeAdapter.swift in Sources */,
+				BE3041794EB779AC76EC70F1 /* SynchronizationAdapter.swift in Sources */,
+				EA55470DEF90E02559A40118 /* Tessellation.metal in Sources */,
+				BE741FBFB36D7F38F57C7230 /* TessellationEmulator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2DD6942B0F4CE187AB2EE8EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 558FB2731CAA2DAF198760AD /* MetalBridgeKit */;
+			targetProxy = 0E250E8CB728E74CD0A872EA /* PBXContainerItemProxy */;
+		};
+		F43315462AA343CC9C00A093 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 558FB2731CAA2DAF198760AD /* MetalBridgeKit */;
+			targetProxy = 4A6D9B7D9C73690631F44623 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		56DB2E7E271A6A0410EC4DBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited) BCDEC_BC4BC5_PRECISE=1";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.metalbridge.kit.tests;
+				PRODUCT_NAME = MetalBridgeKitTests;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = Tests/MetalBridgeKitTests/BCDecodeBridge.h;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		56F2ABA8DA016BEF13A07F73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.metalbridge.kit;
+				PRODUCT_NAME = MetalBridgeKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		58690F54768E9D1661E8CABA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited) BCDEC_BC4BC5_PRECISE=1";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.metalbridge.kit.tests;
+				PRODUCT_NAME = MetalBridgeKitTests;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = Tests/MetalBridgeKitTests/BCDecodeBridge.h;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9FD619FF9C8001532BDBFB7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.metalbridge.lab;
+				PRODUCT_NAME = MetalBridgeLab;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A8125900768F473D904CC0BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.metalbridge.lab;
+				PRODUCT_NAME = MetalBridgeLab;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AC8CF30D9842C664DA4F6D00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_COMPILER_FLAGS = "-std=ios-metal1.2";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B779EB33AF65B581260E3F93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.metalbridge.kit;
+				PRODUCT_NAME = MetalBridgeKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		E4ACB707B87A304D4F7ED2FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_COMPILER_FLAGS = "-std=ios-metal1.2";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7299B5FF6A1C1C5A5A458745 /* Build configuration list for PBXNativeTarget "MetalBridgeLab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FD619FF9C8001532BDBFB7F /* Debug */,
+				A8125900768F473D904CC0BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C59989A65851F7898ED907A0 /* Build configuration list for PBXProject "MetalBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC8CF30D9842C664DA4F6D00 /* Debug */,
+				E4ACB707B87A304D4F7ED2FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CD11DD1F1C54676C67074291 /* Build configuration list for PBXNativeTarget "MetalBridgeKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B779EB33AF65B581260E3F93 /* Debug */,
+				56F2ABA8DA016BEF13A07F73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D6278613AACD1EB49D403B3B /* Build configuration list for PBXNativeTarget "MetalBridgeKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56DB2E7E271A6A0410EC4DBA /* Debug */,
+				58690F54768E9D1661E8CABA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 38FD9A42E99B6D4C9A5A825B /* Project object */;
+}

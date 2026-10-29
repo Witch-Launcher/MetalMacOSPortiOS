@@ -1,0 +1,95 @@
+name: MetalBridge
+
+options:
+  bundleIdPrefix: dev.metalbridge
+  deploymentTarget:
+    iOS: "14.0"
+  developmentLanguage: en
+  createIntermediateGroups: true
+
+settings:
+  base:
+    IPHONEOS_DEPLOYMENT_TARGET: "14.0"
+    SWIFT_VERSION: "5.0"
+    TARGETED_DEVICE_FAMILY: "1,2"
+    CLANG_ENABLE_MODULES: YES
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    MTL_COMPILER_FLAGS: "-std=ios-metal1.2"
+
+targets:
+  MetalBridgeKit:
+    type: framework
+    platform: iOS
+    sources:
+      - path: Sources/MetalBridgeKit
+      - path: Sources/MetalBridgeKit/Shims/MBMetalShims.h
+        headerVisibility: public
+    settings:
+      base:
+        PRODUCT_NAME: MetalBridgeKit
+        PRODUCT_BUNDLE_IDENTIFIER: dev.metalbridge.kit
+        DEFINES_MODULE: YES
+        SKIP_INSTALL: YES
+        ONLY_ACTIVE_ARCH: NO
+        GENERATE_INFOPLIST_FILE: YES
+    dependencies:
+      - sdk: Metal.framework
+      - sdk: QuartzCore.framework
+
+  MetalBridgeLab:
+    type: application
+    platform: iOS
+    sources:
+      - path: Sources/MetalBridgeLab
+      - path: Shaders
+    settings:
+      base:
+        PRODUCT_NAME: MetalBridgeLab
+        PRODUCT_BUNDLE_IDENTIFIER: dev.metalbridge.lab
+        INFOPLIST_FILE: App/Info.plist
+        CODE_SIGN_STYLE: Automatic
+        ONLY_ACTIVE_ARCH: NO
+        SUPPORTS_MACCATALYST: NO
+        ASSETCATALOG_COMPILER_APPICON_NAME: ""
+    dependencies:
+      - target: MetalBridgeKit
+        embed: true
+      - sdk: Metal.framework
+
+  MetalBridgeKitTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: Tests/MetalBridgeKitTests
+      - path: third_party/bcdec/bcdec_impl.c
+        headerVisibility: private
+    settings:
+      base:
+        PRODUCT_NAME: MetalBridgeKitTests
+        PRODUCT_BUNDLE_IDENTIFIER: dev.metalbridge.kit.tests
+        IPHONEOS_DEPLOYMENT_TARGET: "14.0"
+        ONLY_ACTIVE_ARCH: NO
+        GENERATE_INFOPLIST_FILE: YES
+        SWIFT_OBJC_BRIDGING_HEADER: Tests/MetalBridgeKitTests/BCDecodeBridge.h
+        GCC_PREPROCESSOR_DEFINITIONS: "$(inherited) BCDEC_BC4BC5_PRECISE=1"
+    dependencies:
+      - target: MetalBridgeKit
+
+schemes:
+  MetalBridgeLab:
+    build:
+      targets:
+        MetalBridgeLab: all
+        MetalBridgeKitTests: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - MetalBridgeKitTests
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release
