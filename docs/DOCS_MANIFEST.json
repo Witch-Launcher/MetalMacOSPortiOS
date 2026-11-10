@@ -3,14 +3,28 @@
   "repository": "https://github.com/Witch-Launcher/MetalMacOSPortiOS",
   "branch": "main",
   "webSection": "Projects",
-  "languages": ["en"],
-  "bases": { "en": "" },
+  "languages": [
+    "en"
+  ],
+  "bases": {
+    "en": ""
+  },
   "order": [
-    { "group": "Inventory", "file": "API_INVENTORY.md" },
-    { "group": "Coverage", "file": "COVERAGE.md" },
-    { "group": "Shader", "file": "COMPAT_SHADER.md" },
-    { "group": "Verification", "file": "VERIFICATION.md" },
-    { "group": "Legal", "file": "privacy.md" },
-    { "group": "Legal", "file": "terms.md" }
+    {
+      "group": "Inventory",
+      "file": "API_INVENTORY.md"
+    },
+    {
+      "group": "Coverage",
+      "file": "COVERAGE.md"
+    },
+    {
+      "group": "Shader",
+      "file": "COMPAT_SHADER.md"
+    },
+    {
+      "group": "Verification",
+      "file": "VERIFICATION.md"
+    }
   ]
 }
