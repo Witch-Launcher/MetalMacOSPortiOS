@@ -1,0 +1,14 @@
+{
+  "project": "MetalBridge",
+  "repository": "https://github.com/Witch-Launcher/MetalMacOSPortiOS",
+  "webSection": "Projects",
+  "languages": ["en"],
+  "order": [
+    { "group": "Inventory", "file": "API_INVENTORY.md" },
+    { "group": "Coverage", "file": "COVERAGE.md" },
+    { "group": "Shader", "file": "COMPAT_SHADER.md" },
+    { "group": "Verification", "file": "VERIFICATION.md" },
+    { "group": "Legal", "file": "privacy.md" },
+    { "group": "Legal", "file": "terms.md" }
+  ]
+}
