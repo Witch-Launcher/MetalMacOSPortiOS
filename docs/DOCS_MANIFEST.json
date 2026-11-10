@@ -1,8 +1,10 @@
 {
   "project": "MetalBridge",
   "repository": "https://github.com/Witch-Launcher/MetalMacOSPortiOS",
+  "branch": "main",
   "webSection": "Projects",
   "languages": ["en"],
+  "bases": { "en": "" },
   "order": [
     { "group": "Inventory", "file": "API_INVENTORY.md" },
     { "group": "Coverage", "file": "COVERAGE.md" },
